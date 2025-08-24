@@ -3,9 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Recarga Móvil España</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h2>Recarga tu móvil</h2>
+  <div class="bienvenida">
+    <h1 id="saludo">¡Bienvenido a Recarga Móvil España!</h1>
+  </div>
+
+  <div class="hora">
+    <p id="reloj">Cargando hora...</p>
+  </div>
+
   <form id="recargaForm">
     <label>Número de móvil:</label>
     <input type="text" id="numero" required pattern="^[67]\d{8}$"><br>
@@ -16,19 +25,22 @@
       <option value="orange">Orange</option>
       <option value="vodafone">Vodafone</option>
       <option value="yoigo">Yoigo</option>
+      <option value="digi">Digi</option>
     </select><br>
 
     <label>Importe (€):</label>
     <select id="importe">
       <option value="5">5</option>
       <option value="10">10</option>
+      <option value="15">15</option>
       <option value="20">20</option>
+      <option value="25">25</option>
+      <option value="30">30</option>
     </select><br>
 
     <div id="paypal-button-container"></div>
   </form>
 
-  <!-- ✅ Aquí van los scripts correctamente -->
   <script src="https://www.paypal.com/sdk/js?client-id=AeOSjgSppYB-645zS1ikvLGNKokHSegPWUu3PPd3GlvQ2G9wE69WZ6hGEad_DFhdW5SfcZ7BIL0NYjaL&currency=EUR"></script>
   <script src="app.js"></script>
 </body>

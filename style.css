@@ -1,0 +1,107 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #00796b;
+  outline: none;
+}
+
+#paypal-button-container {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.bienvenida {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.bienvenida h1 {
+  font-size: 24px;
+  color: #004d40;
+  margin: 0;
+}
+
+.hora {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#reloj {
+  font-weight: bold;
+  font-size: 22px;
+  color: #00796b;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  body {
+    height: auto;
+    align-items: flex-start;
+  }
+
+  form {
+    padding: 20px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .bienvenida h1 {
+    font-size: 20px;
+  }
+
+  #reloj {
+    font-size: 18px;
+  }
+}
